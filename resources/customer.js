@@ -14,6 +14,12 @@ module.exports = {
       params: ['first_name', 'last_name', 'email*', 'phone']
     },
 
+    deactivate: {
+      method: 'post',
+      endpoint: [root, '/deactivate_authorization'].join(''),
+      params: ['authorization_code']
+    },
+
   /*
   Get customer
   */
